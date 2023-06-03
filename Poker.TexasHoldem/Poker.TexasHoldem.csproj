@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Remove="Game\Combinations\**" />
+      <EmbeddedResource Remove="Game\Combinations\**" />
+      <None Remove="Game\Combinations\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Poker.Domain\Poker.Domain.csproj" />
+    </ItemGroup>
+
+</Project>
